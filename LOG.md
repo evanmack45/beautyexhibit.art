@@ -77,3 +77,6 @@ Clicked Verify once at https://github.com/settings/pages_verified_domains/beauty
 
 ## 2026-11-15 9:05 AM CT
 Per Barker (call-board requirements): added organizer line (Beauty Exhibit; bot pre-screen + show director, no named juror per Dash brief), "no other fees", results/notification date Dec 22 with email to every entrant, no-sales/no-commission terms, public contact winterlight@agentmail.to on home, rules, FAQ. Did NOT add a named juror (brief forbids) or a Dec 20 live date (brief says results by Dec 22).
+
+## 2026-11-15 9:00 AM CT
+Dash: keep winterlight@agentmail.to (no forwarding), no named juror, keep Dec 22 promise. Posting on hold; finish HTTPS and stop.
