@@ -39,3 +39,9 @@ Checked `https://www.afternic.com/domain/beautyexhibit.art` with curl: HTTP 200.
 
 ### Stripe check (before deploy)
 - `https://buy.stripe.com/3cI8wH2TWbpD1qbe9V3oA04` returned HTTP 200. A rendered checkout shot will be taken and logged with the github.io results. No payment was made.
+
+### Hosting results (still 2026-11-15, America/Chicago)
+- Public repo: https://github.com/evanmack45/beautyexhibit.art (main). No other repo or site was touched. DNS was not changed.
+- Pages was enabled from `main` `/` with no custom domain first. Status became `built`. `https://evanmack45.github.io/beautyexhibit.art/` returned **HTTP 200** (no redirect). CSS, JS, favicon, rules, FAQ, `/submit-w9q4/`, 404.html, robots.txt, the winter-light graphic, and og.png all returned 200. There is no sitemap (that path serves the custom 404). Live `js/config.js` has the Stripe Payment Link and the mailto submit target.
+- Official screenshots taken from github.io before any CNAME was set (1280×800 and 390×844): `shots/github-io-home-1280.png`, `shots/github-io-home-390.png`, `shots/github-io-submit-1280.png`, `shots/github-io-submit-390.png`. JPG copies sit next to them in `shots/` and also at `/workspace/github-io-home-1280.jpg`, `/workspace/github-io-home-390.jpg`, `/workspace/github-io-submit-1280.jpg`, `/workspace/github-io-submit-390.jpg`.
+- Stripe checkout (curl HTTP 200; rendered with Chrome, no payment made): live mode, ETM Industries, “Winter Light juried online show entry (up to 3 artworks)”, **$5.00**, no Test mode banner. Proof: `shots/stripe-checkout-1280.png`.
