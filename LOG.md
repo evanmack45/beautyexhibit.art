@@ -64,3 +64,6 @@ Checked `https://www.afternic.com/domain/beautyexhibit.art` with curl: HTTP 200.
 
 ## 2026-11-15 7:40 AM CT (Mason)
 Viewed home 1280/390 and submit 390 shots: fine. TXT d0951ba6fcb9b66efc168fc6c26bb2 is official: copied from github.com/settings/pages_verified_domains/beautyexhibit.art at 7:27 AM CT (pending, not yet verified). Sent Dash the full DNS set.
+
+## 2026-11-15 7:40 AM CT
+Per Dash: call is open now. Replaced "Call opens November 20, 2026" with "Open now" on home, rules, meta and README.

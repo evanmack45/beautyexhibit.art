@@ -2,7 +2,7 @@
 
 A juried online exhibition at [beautyexhibit.art](https://beautyexhibit.art/).
 
-The first open call is **Winter Light**. Entry is $5 and covers up to three works. The call opens November 20, 2026. Entries close December 15, 2026, at 11:59 PM CT. Results post by December 22, 2026.
+The first open call is **Winter Light**. Entry is $5 and covers up to three works. The call is open now. Entries close December 15, 2026, at 11:59 PM CT. Results post by December 22, 2026.
 
 This is a plain static site (HTML, CSS, and JavaScript). There is no build step.
 
