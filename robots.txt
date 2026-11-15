@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /submit-w9q4/
+
+# No sitemap. The custom domain is the canonical home once DNS is pointed at GitHub Pages.

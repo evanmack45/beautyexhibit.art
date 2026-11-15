@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 700" role="img" aria-labelledby="wl-title wl-desc">
+  <title id="wl-title">Winter light, a site graphic</title>
+  <desc id="wl-desc">An abstract field of dark color with a low, pale band of light. This is a site graphic, not an exhibition entry.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#070708"/>
+      <stop offset="38%" stop-color="#12110f"/>
+      <stop offset="62%" stop-color="#1c1915"/>
+      <stop offset="74%" stop-color="#3a3228"/>
+      <stop offset="82%" stop-color="#8a7a5e"/>
+      <stop offset="87%" stop-color="#e8dcc0"/>
+      <stop offset="90%" stop-color="#f6f1e4"/>
+      <stop offset="93%" stop-color="#c4b392"/>
+      <stop offset="100%" stop-color="#151310"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="52%" cy="86%" r="55%">
+      <stop offset="0%" stop-color="#fff8ea" stop-opacity="0.55"/>
+      <stop offset="28%" stop-color="#e6d5b0" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0c0b0a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="veil" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0c0b0a" stop-opacity="0.35"/>
+      <stop offset="45%" stop-color="#0c0b0a" stop-opacity="0"/>
+      <stop offset="70%" stop-color="#0c0b0a" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0c0b0a" stop-opacity="0.28"/>
+    </linearGradient>
+    <filter id="soft" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="700" fill="#0c0b0a"/>
+  <rect width="1600" height="700" fill="url(#sky)"/>
+  <rect width="1600" height="700" fill="url(#glow)"/>
+  <rect width="1600" height="700" fill="url(#veil)"/>
+  <!-- a slightly brighter core along the horizon, softened -->
+  <ellipse cx="830" cy="612" rx="520" ry="28" fill="#fff6e4" opacity="0.45" filter="url(#soft)"/>
+  <rect x="0" y="608" width="1600" height="2" fill="#f3ead6" opacity="0.55"/>
+</svg>
