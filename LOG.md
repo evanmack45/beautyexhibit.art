@@ -67,3 +67,13 @@ Viewed home 1280/390 and submit 390 shots: fine. TXT d0951ba6fcb9b66efc168fc6c26
 
 ## 2026-11-15 7:40 AM CT
 Per Dash: call is open now. Replaced "Call opens November 20, 2026" with "Open now" on home, rules, meta and README.
+
+
+## 2026-11-15 08:11 AM CST (Mason, go-live routine)
+Clicked Verify once at https://github.com/settings/pages_verified_domains/beautyexhibit.art (signed in as evanmack45). GitHub still says: "We were unable to verify ownership of beautyexhibit.art. We couldn't find the TXT record. Note that DNS changes can take up to 24 hours." Public DNS (Google + Cloudflare DoH) still has A x4, AAAA x4, www CNAME to evanmack45.github.io, and TXT _github-pages-challenge-evanmack45 = d0951ba6fcb9b66efc168fc6c26bb2. Pages API: protected_domain_state unverified, https_certificate null, https_enforced false. Before 11:00 AM CT stop time; no messages sent. Will retry next run.
+
+## 2026-11-15 08:44 AM CST (Mason, go-live routine)
+Clicked Verify once at https://github.com/settings/pages_verified_domains/beautyexhibit.art (signed in as evanmack45). GitHub still says: "We were unable to verify ownership of beautyexhibit.art. We couldn't find the TXT record. Note that DNS changes can take up to 24 hours." Public DNS (Google + Cloudflare DoH) still has A x4, AAAA x4, www CNAME to evanmack45.github.io, and TXT _github-pages-challenge-evanmack45 = d0951ba6fcb9b66efc168fc6c26bb2. Pages API after the click: protected_domain_state unverified, https_certificate null, https_enforced false. Before 11:00 AM CT stop time; no messages sent. Will retry next run.
+
+## 2026-11-15 9:05 AM CT
+Per Barker (call-board requirements): added organizer line (Beauty Exhibit; bot pre-screen + show director, no named juror per Dash brief), "no other fees", results/notification date Dec 22 with email to every entrant, no-sales/no-commission terms, public contact winterlight@agentmail.to on home, rules, FAQ. Did NOT add a named juror (brief forbids) or a Dec 20 live date (brief says results by Dec 22).
