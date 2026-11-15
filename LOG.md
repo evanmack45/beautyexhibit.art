@@ -45,3 +45,19 @@ Checked `https://www.afternic.com/domain/beautyexhibit.art` with curl: HTTP 200.
 - Pages was enabled from `main` `/` with no custom domain first. Status became `built`. `https://evanmack45.github.io/beautyexhibit.art/` returned **HTTP 200** (no redirect). CSS, JS, favicon, rules, FAQ, `/submit-w9q4/`, 404.html, robots.txt, the winter-light graphic, and og.png all returned 200. There is no sitemap (that path serves the custom 404). Live `js/config.js` has the Stripe Payment Link and the mailto submit target.
 - Official screenshots taken from github.io before any CNAME was set (1280×800 and 390×844): `shots/github-io-home-1280.png`, `shots/github-io-home-390.png`, `shots/github-io-submit-1280.png`, `shots/github-io-submit-390.png`. JPG copies sit next to them in `shots/` and also at `/workspace/github-io-home-1280.jpg`, `/workspace/github-io-home-390.jpg`, `/workspace/github-io-submit-1280.jpg`, `/workspace/github-io-submit-390.jpg`.
 - Stripe checkout (curl HTTP 200; rendered with Chrome, no payment made): live mode, ETM Industries, “Winter Light juried online show entry (up to 3 artworks)”, **$5.00**, no Test mode banner. Proof: `shots/stripe-checkout-1280.png`.
+
+- Then `CNAME` (contents: `beautyexhibit.art`) was committed and pushed, and the Pages API was updated with `cname=beautyexhibit.art`. A PUT that also sent `https_enforced: false` returned HTTP 404 “The certificate does not exist yet” — expected, there is no cert until DNS exists. A subsequent GET showed the cname already set and HTTPS not enforced:
+
+```json
+{"url":"https://api.github.com/repos/evanmack45/beautyexhibit.art/pages","status":"building","cname":"beautyexhibit.art","custom_404":true,"html_url":"http://beautyexhibit.art/","build_type":"legacy","source":{"branch":"main","path":"/"},"public":true,"protected_domain_state":"unverified","pending_domain_unverified_at":null,"https_enforced":false}
+```
+
+- After the CNAME was set, `https://evanmack45.github.io/beautyexhibit.art/` still returned HTTP 200 (cached; `max-age=600`). The apex will not resolve until DNS is pointed at GitHub Pages. Expected.
+- `https_enforced` is false on the custom domain until DNS and the Pages certificate are in place. Do not flip that on until DNS is done.
+- Account-level Pages domain verification: there is no REST API for it. The TXT record `_github-pages-challenge-evanmack45.beautyexhibit.art` has to be created from GitHub profile Settings → Pages → Add a domain (the UI), not from `gh api`. Not done in this pass.
+- DNS records GitHub Pages will need, when someone else is ready to move nameservers (same set as sharethislife.com, confirmed against GitHub docs, “Managing a custom domain” and “Securing your GitHub Pages site with HTTPS”):
+  - Apex A: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+  - Apex AAAA: `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
+  - CNAME `www` → `evanmack45.github.io`
+
+- 2026-11-15 7:36 AM CT: github.io checklist passed; CNAME is set; DNS was not changed. Next: Dash points DNS; then verify the domain, wait for the cert, enforce HTTPS, and take live-domain shots.
