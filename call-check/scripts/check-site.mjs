@@ -23,7 +23,7 @@ const FROZEN = {
   "submit-w9q4/index.html": "1e76fd30ad81f1514ba9e201df58ba18fa11b0e128eb0e5ba7f4ba4ff9b3e562",
   "js/config.js": "6cb2084042775ad0e6e9cdce2c7d5a1f8f2eead874a97fa7556703d461ed4f37",
   "js/app.js": "6543e5bf7b7deb2c884b55b9400416aa9799aeb819f63bf5326d9d6b701eaf44",
-  "css/site.css": "e6b30d1e49b78a7cf47b9dbcbdf7025a85310829cb25bf13758b2e7aae9129f3",
+  "css/site.css": "f3e1ef8ddc28c27bcd3066d58c6bac98aaba38bc941b3f3a13dde4d34365b2db",
   "img/winter-light.svg": "28e3372534a45a78211b0faadce485dc918e46e3cc26fb5a32ca42c374acea3a",
   "CNAME": "c1d520f856aea274b6a5151fb687f197f228f2a7be94d04ddaeab9849de111fb",
   "robots.txt": "daafec71c71549c10c065c0819acd54803c463fbb6966ff0e4cde1302a6207b6",
