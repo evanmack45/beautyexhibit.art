@@ -91,3 +91,16 @@ Clicked Verify once at https://github.com/settings/pages_verified_domains/beauty
 The public problem was not a dead deploy. DNS is still correct (apex A + AAAA to GitHub Pages, www CNAME to evanmack45.github.io, GoDaddy nameservers, domain verified). Hitting GitHub IPs directly, HTTP returns 200 and serves the Winter Light site (last-modified 2026-11-15 15:00:36 GMT). HTTPS fails certificate verification: GitHub still presents the `*.github.io` cert, and the Pages API shows `https_certificate: null`, `https_enforced: false`. From the box's egress proxy the same HTTPS failure is often reported as HTTP 500 from Pingora, which is how this was first described. The certificate was never issued after the Nov 15 verification; the planned remove-and-re-add of the custom domain did not run.
 
 Before retriggering the cert, the live $5 pay button and “Open now” copy were turned off. Winter Light was already parked (no named juror; money rule: no charges until an end-to-end test and a named fulfillment owner). `CALL_OPEN` in `js/config.js` is `false`. The site now shows “Call paused” and a waitlist mailto to winterlight@agentmail.to. The Stripe URL is not in the HTML. Next: push this change, remove and re-add the Pages custom domain, wait for an approved certificate, enforce HTTPS, and verify https://beautyexhibit.art returns 200 with a valid cert.
+
+
+## 2026-11-24 7:16 PM CT (Dash, HTTPS repair complete)
+
+Removed and re-added the Pages custom domain (GitHub wrote `Delete CNAME` / `Create CNAME` on main, then fast-forwarded locally). Pages API: `https_certificate.state=approved` for `beautyexhibit.art` and `www.beautyexhibit.art`, expires 2027-02-22. Then set `https_enforced=true`.
+
+Verified against GitHub Pages `185.199.108.153`:
+- `https://beautyexhibit.art/` → **HTTP 200**, valid Let's Encrypt cert, CN=beautyexhibit.art, SAN includes www.
+- `http://beautyexhibit.art/` → **301** to https://beautyexhibit.art/
+- `https://www.beautyexhibit.art/` → **301** then **200** at the apex.
+- rules.html, faq.html, css, js, graphic, `/submit-w9q4/`: 200. Unknown path: custom 404.
+
+Rendered in headless Chrome at 1280×800 and 390×844 (shots in `/workspace/dash/domains/evidence-2026-11-24/`). The page shows “Call paused” and “Tell me when a call opens.” After JS, the $5 pay button stays hidden and has no Stripe href. `CALL_OPEN` remains false.
