@@ -43,7 +43,7 @@ Checked `https://www.afternic.com/domain/beautyexhibit.art` with curl: HTTP 200.
 ### Hosting results (still 2026-11-15, America/Chicago)
 - Public repo: https://github.com/evanmack45/beautyexhibit.art (main). No other repo or site was touched. DNS was not changed.
 - Pages was enabled from `main` `/` with no custom domain first. Status became `built`. `https://evanmack45.github.io/beautyexhibit.art/` returned **HTTP 200** (no redirect). CSS, JS, favicon, rules, FAQ, `/submit-w9q4/`, 404.html, robots.txt, the winter-light graphic, and og.png all returned 200. There is no sitemap (that path serves the custom 404). Live `js/config.js` has the Stripe Payment Link and the mailto submit target.
-- Official screenshots taken from github.io before any CNAME was set (1280×800 and 390×844): `shots/github-io-home-1280.png`, `shots/github-io-home-390.png`, `shots/github-io-submit-1280.png`, `shots/github-io-submit-390.png`. JPG copies sit next to them in `shots/` and also at `/workspace/github-io-home-1280.jpg`, `/workspace/github-io-home-390.jpg`, `/workspace/github-io-submit-1280.jpg`, `/workspace/github-io-submit-390.jpg`.
+- Official screenshots taken from github.io before any CNAME was set (1280×800 and 390×844): `shots/github-io-home-1280.png`, `shots/github-io-home-390.png`, `shots/github-io-submit-1280.png`, `shots/github-io-submit-390.png`. JPG copies sit next to them in `shots/` and also at `/workspace/sites/beautyexhibit.art/shots/github-io-home-1280.jpg`, `/workspace/sites/beautyexhibit.art/shots/github-io-home-390.jpg`, `/workspace/sites/beautyexhibit.art/shots/github-io-submit-1280.jpg`, `/workspace/sites/beautyexhibit.art/shots/github-io-submit-390.jpg`.
 - Stripe checkout (curl HTTP 200; rendered with Chrome, no payment made): live mode, ETM Industries, “Winter Light juried online show entry (up to 3 artworks)”, **$5.00**, no Test mode banner. Proof: `shots/stripe-checkout-1280.png`.
 
 - Then `CNAME` (contents: `beautyexhibit.art`) was committed and pushed, and the Pages API was updated with `cname=beautyexhibit.art`. A PUT that also sent `https_enforced: false` returned HTTP 404 “The certificate does not exist yet” — expected, there is no cert until DNS exists. A subsequent GET showed the cname already set and HTTPS not enforced:
@@ -80,3 +80,14 @@ Per Barker (call-board requirements): added organizer line (Beauty Exhibit; bot 
 
 ## 2026-11-15 9:00 AM CT
 Dash: keep winterlight@agentmail.to (no forwarding), no named juror, keep Dec 22 promise. Posting on hold; finish HTTPS and stop.
+
+
+## 2026-11-15 9:13 AM CST (Mason, go-live routine)
+Clicked Verify once at https://github.com/settings/pages_verified_domains/beautyexhibit.art (signed in as evanmack45). Success: GitHub redirected to /settings/pages with banner "Successfully verified beautyexhibit.art". Verified domains list now shows sharethislife.com and beautyexhibit.art as Verified. Pages API: protected_domain_state verified, https_certificate null, https_enforced false. Under the 60-minute wait before remove-and-re-add CNAME to trigger the cert. No messages sent. Next: wait for an approved certificate, then enforce HTTPS.
+
+
+## 2026-11-24 7:10 PM CT (Dash, HTTPS repair)
+
+The public problem was not a dead deploy. DNS is still correct (apex A + AAAA to GitHub Pages, www CNAME to evanmack45.github.io, GoDaddy nameservers, domain verified). Hitting GitHub IPs directly, HTTP returns 200 and serves the Winter Light site (last-modified 2026-11-15 15:00:36 GMT). HTTPS fails certificate verification: GitHub still presents the `*.github.io` cert, and the Pages API shows `https_certificate: null`, `https_enforced: false`. From the box's egress proxy the same HTTPS failure is often reported as HTTP 500 from Pingora, which is how this was first described. The certificate was never issued after the Nov 15 verification; the planned remove-and-re-add of the custom domain did not run.
+
+Before retriggering the cert, the live $5 pay button and “Open now” copy were turned off. Winter Light was already parked (no named juror; money rule: no charges until an end-to-end test and a named fulfillment owner). `CALL_OPEN` in `js/config.js` is `false`. The site now shows “Call paused” and a waitlist mailto to winterlight@agentmail.to. The Stripe URL is not in the HTML. Next: push this change, remove and re-add the Pages custom domain, wait for an approved certificate, enforce HTTPS, and verify https://beautyexhibit.art returns 200 with a valid cert.

@@ -1,12 +1,32 @@
-/* Beauty Exhibit — apply config to pay and mail links. */
+/* Beauty Exhibit — apply config to pay, waitlist, and mail links. */
 (function () {
   "use strict";
 
   var c = window.BE_CONFIG;
   if (!c) return;
 
-  document.querySelectorAll("[data-pay]").forEach(function (el) {
-    el.setAttribute("href", c.stripePaymentLink);
+  var open = !!c.callOpen;
+
+  document.querySelectorAll("[data-call-open-only]").forEach(function (el) {
+    el.hidden = !open;
+  });
+  document.querySelectorAll("[data-call-closed-only]").forEach(function (el) {
+    el.hidden = open;
+  });
+
+  if (open) {
+    document.querySelectorAll("[data-pay]").forEach(function (el) {
+      el.setAttribute("href", c.stripePaymentLink);
+    });
+  } else {
+    document.querySelectorAll("[data-pay]").forEach(function (el) {
+      el.removeAttribute("href");
+      el.setAttribute("aria-disabled", "true");
+    });
+  }
+
+  document.querySelectorAll("[data-waitlist-mailto]").forEach(function (el) {
+    el.setAttribute("href", c.waitlistMailtoHref);
   });
 
   document.querySelectorAll("[data-submit-mail]").forEach(function (el) {
