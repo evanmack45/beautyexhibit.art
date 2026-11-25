@@ -104,3 +104,7 @@ Verified against GitHub Pages `185.199.108.153`:
 - rules.html, faq.html, css, js, graphic, `/submit-w9q4/`: 200. Unknown path: custom 404.
 
 Rendered in headless Chrome at 1280×800 and 390×844 (shots in `/workspace/dash/domains/evidence-2026-11-24/`). The page shows “Call paused” and “Tell me when a call opens.” After JS, the $5 pay button stays hidden and has no Stripe href. `CALL_OPEN` remains false.
+
+## 2026-11-24 7:21 PM CT
+
+Per Barker, call-board fields for Winter Light. Home, rules, and FAQ now state the organizer (Beauty Exhibit), the fee ($5 for up to three works, no other fees), the close (December 15, 2026, 11:59 PM CT), results by December 22, 2026, and the contact (winterlight@agentmail.to). The exhibition opens with the results. Did not name a juror, invent a jury panel, or add credentials. The brief forbids that. Did not add a December 20 live date. The brief says results by December 22. The call stays paused. `CALL_OPEN` stays false. The pay button stays off. Nothing was posted. Board listings are Barker's job, and posting is still on hold.

@@ -2,7 +2,7 @@
 
 A juried online exhibition at [beautyexhibit.art](https://beautyexhibit.art/).
 
-The first open call is **Winter Light**. Entry is $5 and covers up to three works when a call is open. The call is paused. We are not taking entries or payments right now.
+The first open call is **Winter Light**, organized by Beauty Exhibit. Entry is $5 and covers up to three works when a call is open. There are no other fees. The call is paused. We are not taking entries or payments right now. Entries close December 15, 2026, at 11:59 PM CT. Results post by December 22, 2026. Contact: winterlight@agentmail.to. There is no named juror.
 
 This is a plain static site (HTML, CSS, and JavaScript). There is no build step.
 
