@@ -120,3 +120,42 @@ Plugged in `/workspace/scout/callcheck-20.json` as `call-check/data/calls.json`.
 Source re-check (2026-11-24, curl with a browser user-agent, follow redirects): 46 unique source URLs. 44 returned HTTP 200 on the first pass. Two culturalelab.com URLs timed out on the first pass (curl 000, 0 bytes after 25s) and returned HTTP 200 on an immediate IPv4 retry (100-artists 61,051 bytes; published-books 332,034 bytes). No URL was changed. Scout's file was not edited.
 
 Full log: `/workspace/mason/callcheck-build.md`.
+
+## 2026-11-24 9:02 PM CT (Mason, Call Check nav link)
+
+Dash accepted Call Check and asked for a Call Check link in the Winter Light nav.
+
+Blast-radius first, proved by running a diff against `cc09771`: the only HTML change on Winter Light pages is one added line, `<a href="/call-check/">Call Check</a>`, on every page that already had `.site-nav`:
+
+- index.html
+- rules.html
+- faq.html
+- 404.html
+- submit-w9q4/index.html
+
+Nothing was deleted. CSS, JS (`CALL_OPEN` still false), images, CNAME, robots.txt, favicon, and every Call Check file were byte-identical to `cc09771`. No `buy.stripe.com` URL was added to any HTML. The href is root-absolute (`/call-check/`) so the custom 404 still points at the right place from a deep unknown path.
+
+`call-check/scripts/check-site.mjs` freeze hashes were updated for those five HTML files only. The other freeze hashes are unchanged.
+
+Commit `da5c88b2c39e450b79a8537a810d44b57a2bea9a`, pushed to `main`. Pages build: built da5c88b. HTTPS remains enforced, certificate CN=beautyexhibit.art (SAN includes www), expires 2027-02-22.
+
+Live checks, 9:02 PM America/Chicago, 24 Nov 2026 (curl, then Playwright):
+
+- `https://beautyexhibit.art/` 200, GitHub.com, body byte-identical to local index.html, nav link present
+- `https://beautyexhibit.art/rules.html` 200, hash match, link present
+- `https://beautyexhibit.art/faq.html` 200, hash match, link present
+- `https://beautyexhibit.art/submit-w9q4/` 200, hash match, link present
+- `https://beautyexhibit.art/404-test-nav-missing` 404 with the custom page, hash match, link present
+- `https://beautyexhibit.art/call-check/` 200, hash match (Call Check files unchanged)
+- Playwright: clicking "Call Check" on the home nav goes to `https://beautyexhibit.art/call-check/` with HTTP 200 and title "Call Check | Beauty Exhibit"
+- No horizontal overflow at 1280 or 390
+- `CALL_OPEN` is still false. After JS, the `[data-pay]` button has no href and `aria-disabled="true"`. There is still no Stripe URL in the HTML.
+
+Pre-existing (not introduced by this nav change; `css/site.css` and `js/app.js` were not modified): `.cta-row { display: flex; }` overrides the `[hidden]` attribute on the "Enter for $5" row, so that row remains visible under the paused box. The button does not go to Stripe. Left untouched because this change was required to stay nav-only.
+
+Screenshots of the live home page, viewed:
+
+- `/workspace/mason/beautyexhibit-nav-1280.jpg`
+- `/workspace/mason/beautyexhibit-nav-390.jpg`
+
+Both show the new "Call Check" item in the existing site nav, next to FAQ, in the same style. No messages sent.
