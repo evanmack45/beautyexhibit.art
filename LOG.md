@@ -159,3 +159,36 @@ Screenshots of the live home page, viewed:
 - `/workspace/mason/beautyexhibit-nav-390.jpg`
 
 Both show the new "Call Check" item in the existing site nav, next to FAQ, in the same style. No messages sent.
+
+## 2026-11-24 9:07 PM CT (Mason, hide the paused pay row)
+
+Fixed the pre-existing money-rule bug: `.cta-row { display: flex; }` in `css/site.css` was overriding the `[hidden]` attribute, so the "Enter for $5" row stayed visible on the home page while `CALL_OPEN` is false.
+
+Change: one rule added to `css/site.css`, nothing else in that file or in any HTML/JS:
+
+```
+[hidden] {
+  display: none !important;
+}
+```
+
+The global rule was used instead of `.cta-row[hidden]` so any other `[hidden]` element is also protected (the rules page wrap is a `<p hidden>`, already `display: none` before this change). Call Check pages load `site.css` but have no `[hidden]` elements.
+
+Blast-radius, proved by running, against boxes measured on the live site before the fix: with `CALL_OPEN` still false, the $5 row is `display: none` and has a 0×0 box; the wordmark, nav, Call Check link, h1, and paused box did not move; FAQ and Call Check header/h1 did not move; the rules waitlist row did not move. The only expected layout change is the theme section moving up into the space the $5 row used to occupy.
+
+Freeze hash for `css/site.css` only was updated to `f3e1ef8ddc28c27bcd3066d58c6bac98aaba38bc941b3f3a13dde4d34365b2db`. `node call-check/scripts/check-site.mjs` passed.
+
+Commit `5c99d2908228ce068113e1863ee69849ad1400d0`, pushed to `main`. Pages build: built 5c99d29. Live `css/site.css` is byte-identical to the local file and contains the new rule.
+
+Live checks, 9:07 PM America/Chicago, 24 Nov 2026, at 1280 and 390:
+
+- `https://beautyexhibit.art/` 200, `CALL_OPEN=false`, $5 row not visible, no Stripe URL, pay control has no href, paused box still visible, Call Check nav still present, no horizontal overflow
+- At 1280, wordmark, nav, Call Check link, h1, and paused box match the pre-fix live boxes
+- `https://beautyexhibit.art/call-check/` 200, title unchanged, 20 calls listed, no `[hidden]` elements, h1 unmoved
+
+Screenshots of the live home page, viewed:
+
+- `/workspace/mason/beautyexhibit-payhidden-1280.jpg`
+- `/workspace/mason/beautyexhibit-payhidden-390.jpg`
+
+Both show the paused box and the waitlist button, and do not show "Enter for $5". No messages sent.
