@@ -3,7 +3,8 @@ import assert from "node:assert/strict";
 import { createRequire } from "node:module";
 import { readFileSync } from "node:fs";
 const S = createRequire(import.meta.url)("../js/schema.js");
-const placeholder = readFileSync(new URL("../data/calls.json", import.meta.url), "utf8");
+const placeholder = readFileSync(new URL("./fixtures/placeholder.json", import.meta.url), "utf8");
+const live = readFileSync(new URL("../data/calls.json", import.meta.url), "utf8");
 const scoutPath = "/workspace/scout/callcheck-20.json";
 
 test("placeholder parses as two example rows, with a not-found cell", () => {
@@ -58,6 +59,12 @@ test("empty list, bad JSON, and non-list documents", () => {
   assert.equal(S.parseJsonText("{").ok, false);
   assert.equal(S.parseDocument({ no: "calls" }).ok, false);
   assert.equal(S.parseDocument({ calls: [null, "x", { title: { value: "Ok", source: "https://example.com" } }] }).records.length, 1);
+});
+
+test("live data file is byte-identical to Scout's callcheck-20.json", () => {
+  const scout = readFileSync(scoutPath);
+  const data = readFileSync(new URL("../data/calls.json", import.meta.url));
+  assert.equal(data.equals(scout), true);
 });
 
 test("field list is exactly the eight Scout keys, in order", () => {

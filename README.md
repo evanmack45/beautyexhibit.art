@@ -12,4 +12,4 @@ This domain is listed for sale: [Afternic listing](https://www.afternic.com/doma
 
 ## Call Check
 
-A free, sourced list of what public pages say about open art calls, at `/call-check/`. Facts, source links, and "not found" only. No ratings and no payment button. The table is rendered from `call-check/data/calls.json`. Phase 1 of the build ships example rows in that file. Phase 2 replaces it with `/workspace/scout/callcheck-20.json`, unchanged. See `call-check/README.md`.
+A free, sourced list of what public pages say about open art calls, at `/call-check/`. Facts, source links, and "not found" only. No ratings and no payment button. The table is rendered from `call-check/data/calls.json`, which is a byte-identical copy of `/workspace/scout/callcheck-20.json` (20 sourced calls, compiled 2026-11-24). See `call-check/README.md`.

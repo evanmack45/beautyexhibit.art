@@ -112,3 +112,11 @@ Added a free Call Check section at `/call-check/` (rubric, table from JSON, meth
 HTTPS was already in place: Pages API shows `https_certificate.state=approved` (expires 2027-02-22), `https_enforced=true`, `protected_domain_state=verified`. `curl -sI https://beautyexhibit.art/` returned HTTP 200 with a Let's Encrypt cert, CN=beautyexhibit.art. No Pages setting was changed.
 
 The table ships with two clearly marked EXAMPLE rows in `call-check/data/calls.json`. The loader was tested against `/workspace/scout/callcheck-20.json` (already on disk as of 8:27 PM CT) and loads all 20 records unchanged. Phase 2 is a file copy, then a source re-check and new screenshots. No payment button. Mailto uses the existing inbox `winterlight@agentmail.to` with the subject "Call Check: please review this call". Full log: `/workspace/mason/callcheck-build.md`.
+
+## 2026-11-24 8:45 PM CT (Mason, Call Check phase 2)
+
+Plugged in `/workspace/scout/callcheck-20.json` as `call-check/data/calls.json`. The two files are byte-identical (sha256 038d17a820243357a2d2c53e4fcf96dd09d39e46771974689ffbe6398d73dd6f). The table now lists 20 sourced calls, with no example rows. Winter Light pages remain byte-intact. No payment button. No Stripe changes.
+
+Source re-check (2026-11-24, curl with a browser user-agent, follow redirects): 46 unique source URLs. 44 returned HTTP 200 on the first pass. Two culturalelab.com URLs timed out on the first pass (curl 000, 0 bytes after 25s) and returned HTTP 200 on an immediate IPv4 retry (100-artists 61,051 bytes; published-books 332,034 bytes). No URL was changed. Scout's file was not edited.
+
+Full log: `/workspace/mason/callcheck-build.md`.

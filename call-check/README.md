@@ -17,18 +17,9 @@ Each field should be `{ "value": "<string>", "source": "<url or empty>" }`. A mi
 
 A value that only starts with "not found" but continues, such as `not found (the call states ...)`, is shown as a sourced fact, not as the not-found label. Scout's file has one such cell.
 
-## Phase 2
+## Phase 2 (done 2026-11-24)
 
-When the 20-call file should go live:
-
-```
-cp /workspace/scout/callcheck-20.json call-check/data/calls.json
-node --test call-check/test/schema.test.mjs
-node call-check/scripts/check-site.mjs
-# re-check the source URLs, commit, push, then take fresh 1280 and 390 screenshots
-```
-
-Do not edit the Scout file to make it load. The tests already parse it unchanged (20 of 20).
+`data/calls.json` is a byte-identical copy of `/workspace/scout/callcheck-20.json`. Do not edit Scout's file to make it load. To refresh later, copy it again and re-check the source URLs.
 
 ## Local checks
 

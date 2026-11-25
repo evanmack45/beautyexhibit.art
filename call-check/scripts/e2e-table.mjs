@@ -19,11 +19,13 @@ async function open(path, hook) {
   const { ctx, p, res, errs } = await open("/call-check/");
   ok(res.ok(), "GET /call-check/ " + res.status());
   await p.waitForSelector(".cc-table, .cc-empty, .is-error");
-  ok(await p.locator("#cc-example-banner").count() === 1, "example banner is shown for the placeholder");
-  ok((await p.locator(".cc-badge").count()) === 2, "two Example badges");
-  ok(await p.getByText("EXAMPLE Midwinter Print Fair", { exact: false }).count() > 0, "first example title is visible");
+  ok(await p.locator("#cc-example-banner").count() === 0, "live data: no example banner");
+  ok((await p.locator(".cc-badge").count()) === 0, "live data: no Example badges");
+  ok(await p.getByText("47th Annual Open Juried Show", { exact: false }).count() > 0, "first live row is the Ridgewood call");
+  ok((await p.locator(".cc-table tbody tr").count()) === 20, "live data: 20 rows");
+  ok(/20 calls listed/.test(await p.textContent("#cc-status")), "status says 20 calls listed");
   ok(await p.locator("td .cc-not-found").count() >= 1, "at least one not-found cell");
-  ok(await p.locator('a.cc-source[href^="https://example.com/"]').count() >= 1, "source links point at example.com");
+  ok(await p.locator('a.cc-source[href^="https://www.ridgewoodartinstitute.org/"]').count() >= 1, "source links include the Ridgewood pages");
   const href = await p.getAttribute("[data-callcheck-mailto]", "href");
   ok(href && href.startsWith("mailto:winterlight@agentmail.to?") && decodeURIComponent(href).includes("Call Check: please review this call"), "send-a-call mailto is correct");
   ok(errs.length === 0, "no page errors " + JSON.stringify(errs));
@@ -34,17 +36,14 @@ async function open(path, hook) {
 }
 
 {
-  const scout = readFileSync("/workspace/scout/callcheck-20.json");
+  const fixture = readFileSync(new URL("../test/fixtures/placeholder.json", import.meta.url));
   const { ctx, p } = await open("/call-check/", async ctx => {
-    await ctx.route("**/call-check/data/calls.json", route => route.fulfill({ status: 200, contentType: "application/json", body: scout }));
+    await ctx.route("**/call-check/data/calls.json", route => route.fulfill({ status: 200, contentType: "application/json", body: fixture }));
   });
   await p.waitForSelector(".cc-table");
-  ok(await p.locator("#cc-example-banner").count() === 0, "Scout data: no example banner");
-  ok(await p.locator(".cc-badge").count() === 0, "Scout data: no Example badges");
-  ok(await p.getByText("47th Annual Open Juried Show", { exact: false }).count() > 0, "Scout row 1 title is visible");
-  ok((await p.locator(".cc-table tbody tr").count()) === 20, "Scout data: 20 rows");
-  const status = await p.textContent("#cc-status");
-  ok(/20 calls listed/.test(status) && !/example/i.test(status), "status says 20 calls, no example wording: " + status);
+  ok(await p.locator("#cc-example-banner").count() === 1, "fixture: example banner is shown");
+  ok((await p.locator(".cc-badge").count()) === 2, "fixture: two Example badges");
+  ok(await p.getByText("EXAMPLE Midwinter Print Fair", { exact: false }).count() > 0, "fixture title is visible");
   await ctx.close();
 }
 

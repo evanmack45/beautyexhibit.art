@@ -1,72 +1,682 @@
 [
   {
-    "_example": true,
     "title": {
-      "value": "EXAMPLE Midwinter Print Fair",
-      "source": "https://example.com/midwinter"
+      "value": "47th Annual Open Juried Show",
+      "source": "https://www.ridgewoodartinstitute.org/upcoming-exhibitions/2027/47th-annual-juried-show"
     },
     "organizer": {
-      "value": "Example Arts Club",
-      "source": "https://example.com/midwinter"
+      "value": "Ridgewood Art Institute",
+      "source": "https://www.ridgewoodartinstitute.org/upcoming-exhibitions/2027/47th-annual-juried-show"
     },
     "venue": {
-      "value": "Example Arts Club, 1 Example Street, Example City",
-      "source": "https://example.com/midwinter"
+      "value": "Ridgewood Art Institute, 12 East Glen Avenue, Ridgewood, NJ 07450",
+      "source": "https://www.ridgewoodartinstitute.org/upcoming-exhibitions/2027/47th-annual-juried-show"
     },
     "entry_fee": {
-      "value": "USD 25 for one work; USD 10 for each additional work, up to three",
-      "source": "https://example.com/midwinter"
+      "value": "USD 50 for one entry; USD 65 for two entries. Fees are non-refundable. A 25% donation to RAI is taken on all sales.",
+      "source": "https://www.ridgewoodartinstitute.org/upcoming-exhibitions/2027/47th-annual-juried-show"
     },
     "jurors": {
-      "value": "Jordan Example",
-      "source": "https://example.com/midwinter"
+      "value": "Todd M. Casey; Antonio Masi",
+      "source": "https://www.ridgewoodartinstitute.org/upcoming-exhibitions/2027/47th-annual-juried-show"
     },
     "prize": {
-      "value": "Best in show USD 100",
-      "source": "https://example.com/midwinter"
+      "value": "Over USD 10,000 in cash awards, including a USD 2,000 grand prize",
+      "source": "https://www.ridgewoodartinstitute.org/upcoming-exhibitions/2027/47th-annual-juried-show"
     },
     "deadline": {
-      "value": "2027-03-01",
-      "source": "https://example.com/midwinter"
+      "value": "2026-11-30",
+      "source": "https://www.ridgewoodartinstitute.org/upcoming-exhibitions/2027/47th-annual-juried-show"
     },
     "past_show_evidence": {
-      "value": "2026 Midwinter Print Fair results page",
-      "source": "https://example.com/midwinter-2026"
+      "value": "46th Annual Open Juried Show online gallery of accepted artists and award winners",
+      "source": "https://www.ridgewoodartinstitute.org/46th-annual-open-juried-show-gallery"
     }
   },
   {
-    "_example": true,
     "title": {
-      "value": "EXAMPLE Harbor Window Call",
-      "source": "https://example.com/harbor"
+      "value": "2027 Small Works: The Still Small Voice",
+      "source": "https://upstreamgallery.submittable.com/submit/92dfc6cc-524a-400c-a510-2947ad7c655c/2027-small-works-the-still-small-voice"
     },
     "organizer": {
-      "value": "Harbor Example Guild",
-      "source": "https://example.com/harbor"
+      "value": "Upstream Gallery",
+      "source": "https://upstreamgallery.submittable.com/submit/92dfc6cc-524a-400c-a510-2947ad7c655c/2027-small-works-the-still-small-voice"
     },
     "venue": {
-      "value": "not found",
-      "source": "https://example.com/harbor"
+      "value": "Upstream Gallery, 8 Main St., Hastings-on-Hudson, NY 10706",
+      "source": "https://upstreamgallery.submittable.com/submit/92dfc6cc-524a-400c-a510-2947ad7c655c/2027-small-works-the-still-small-voice"
     },
     "entry_fee": {
-      "value": "USD 40, non-refundable",
-      "source": "https://example.com/harbor"
+      "value": "USD 45.00 for a minimum of 3 pieces; USD 4.00 more for each additional entry, up to 8 pieces (USD 65 maximum). All pieces must be for sale. Gallery commission 30% on sales.",
+      "source": "https://upstreamgallery.submittable.com/submit/92dfc6cc-524a-400c-a510-2947ad7c655c/2027-small-works-the-still-small-voice"
     },
     "jurors": {
       "value": "not found",
-      "source": "https://example.com/harbor"
+      "source": "https://upstreamgallery.submittable.com/submit/92dfc6cc-524a-400c-a510-2947ad7c655c/2027-small-works-the-still-small-voice"
     },
     "prize": {
       "value": "not found",
-      "source": "https://example.com/harbor"
+      "source": "https://upstreamgallery.submittable.com/submit/92dfc6cc-524a-400c-a510-2947ad7c655c/2027-small-works-the-still-small-voice"
     },
     "deadline": {
-      "value": "2027-01-15",
-      "source": "https://example.com/harbor"
+      "value": "2026-12-09 (midnight)",
+      "source": "https://upstreamgallery.submittable.com/submit/92dfc6cc-524a-400c-a510-2947ad7c655c/2027-small-works-the-still-small-voice"
+    },
+    "past_show_evidence": {
+      "value": "Upstream Gallery Small Works 2026: Journeys exhibition page",
+      "source": "https://www.upstreamgallery.com/january2026-sw"
+    }
+  },
+  {
+    "title": {
+      "value": "Where Stories Gather",
+      "source": "https://onlinejuriedshows.com/Default.aspx?OJSID=60034"
+    },
+    "organizer": {
+      "value": "WaterWorks Art Museum",
+      "source": "https://onlinejuriedshows.com/Default.aspx?OJSID=60034"
+    },
+    "venue": {
+      "value": "WaterWorks Art Museum, 85 Water Plant Rd, Miles City, MT 59301",
+      "source": "https://onlinejuriedshows.com/Default.aspx?OJSID=60034"
+    },
+    "entry_fee": {
+      "value": "USD 40, covering up to 3 entries. Fees are non-refundable and must be paid by the entry deadline.",
+      "source": "https://onlinejuriedshows.com/Default.aspx?OJSID=60034"
+    },
+    "jurors": {
+      "value": "Jenn Hall Tooke",
+      "source": "https://onlinejuriedshows.com/Default.aspx?OJSID=60034"
+    },
+    "prize": {
+      "value": "Best in show USD 300; honorable mentions USD 200, USD 150, and USD 100; Director's Choice USD 150; People's Choice USD 100",
+      "source": "https://onlinejuriedshows.com/Default.aspx?OJSID=60034"
+    },
+    "deadline": {
+      "value": "2026-12-16",
+      "source": "https://onlinejuriedshows.com/Default.aspx?OJSID=60034"
+    },
+    "past_show_evidence": {
+      "value": "Museum annual juried show list, including 2026 Whispers of Color (juror Jordan Pehler) and earlier years back to 2014",
+      "source": "https://www.wtrworks.org/jurried-shows"
+    }
+  },
+  {
+    "title": {
+      "value": "Monochrome",
+      "source": "https://artcentersarasota.submittable.com/submit/366887/monochrome"
+    },
+    "organizer": {
+      "value": "Art Center Sarasota",
+      "source": "https://artcentersarasota.submittable.com/submit/366887/monochrome"
+    },
+    "venue": {
+      "value": "Art Center Sarasota, 707 N. Tamiami Trail, Sarasota, FL 34236",
+      "source": "https://artcentersarasota.submittable.com/submit/366887/monochrome"
+    },
+    "entry_fee": {
+      "value": "Non-refundable entry fee per submission. One piece: USD 30 members / USD 40 non-members; USD 10 student members / USD 20 student non-members. Two pieces: USD 40 / USD 55; USD 20 / USD 30 students. Three pieces: USD 45 / USD 65; USD 25 / USD 35 students.",
+      "source": "https://artcentersarasota.submittable.com/submit/366887/monochrome"
+    },
+    "jurors": {
+      "value": "Simone Friend",
+      "source": "https://artcentersarasota.submittable.com/submit/366887/monochrome"
+    },
+    "prize": {
+      "value": "1st Place USD 500; 2nd Place USD 300; 3rd Place USD 200; two Merit Awards and four Honorable Mentions (cash amounts for merit and honorable mentions not stated)",
+      "source": "https://artcentersarasota.submittable.com/submit/366887/monochrome"
+    },
+    "deadline": {
+      "value": "2026-12-13",
+      "source": "https://artcentersarasota.submittable.com/submit/366887/monochrome"
+    },
+    "past_show_evidence": {
+      "value": "News report naming winners of Art Center Sarasota's juried show Strange Weather",
+      "source": "https://www.wgcu.org/arts-and-culture/2026-10-27/art-center-sarasotas-strange-weather-explores-worlds-where-the-unexpected-becomes-possible"
+    }
+  },
+  {
+    "title": {
+      "value": "E Pluribus: From Many - Juried Art Exhibition",
+      "source": "https://www.latinoartsinc.org/exhibits/e-pluribus-from-many-juried-art-exhibition/"
+    },
+    "organizer": {
+      "value": "Latino Arts, Inc., in partnership with the Milwaukee Institute of Art & Design (MIAD)",
+      "source": "https://www.latinoartsinc.org/exhibits/e-pluribus-from-many-juried-art-exhibition/"
+    },
+    "venue": {
+      "value": "Latino Arts, Inc., 1028 S 9th St., Milwaukee, WI 53204, located within the United Community Center",
+      "source": "https://www.latinoartsinc.org/exhibits/e-pluribus-from-many-juried-art-exhibition/"
+    },
+    "entry_fee": {
+      "value": "USD 40 per artwork; applicants may submit up to two original works",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18172/CAFE"
+    },
+    "jurors": {
+      "value": "not found",
+      "source": "https://www.latinoartsinc.org/exhibits/e-pluribus-from-many-juried-art-exhibition/"
+    },
+    "prize": {
+      "value": "Established Artist Track: USD 1,000 Jurors' Choice recognition. Emerging Artist Track: USD 800 Jurors' Choice recognition.",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18172/CAFE"
+    },
+    "deadline": {
+      "value": "2027-01-10 at 11:59 p.m. CT",
+      "source": "https://www.latinoartsinc.org/exhibits/e-pluribus-from-many-juried-art-exhibition/"
+    },
+    "past_show_evidence": {
+      "value": "Organizer past exhibits archive (the 2027 call page describes this as a new juried exhibition)",
+      "source": "https://www.latinoartsinc.org/past-exhibits/"
+    }
+  },
+  {
+    "title": {
+      "value": "14th Annual Winter Juried Exhibit",
+      "source": "https://mooresvillearts.org/winter-juried-show"
+    },
+    "organizer": {
+      "value": "Mooresville Arts",
+      "source": "https://mooresvillearts.org/winter-juried-show"
+    },
+    "venue": {
+      "value": "103 W. Center Ave, Mooresville, NC 28115",
+      "source": "https://mooresvillearts.org/winter-juried-show"
+    },
+    "entry_fee": {
+      "value": "USD 40 for Mooresville Arts members in good standing (limit of 2 works); USD 55 for non-members (limit of 2 works). Entry fee is non-refundable and is paid once.",
+      "source": "https://img1.wsimg.com/blobby/go/6ff9335c-dca3-4181-bf78-be29b2a2b0b6/Mooresville%20Arts%2014th%20Annual%20Winter%20Juried%20Exh.pdf"
+    },
+    "jurors": {
+      "value": "Adam N. Justice",
+      "source": "https://mooresvillearts.org/winter-juried-show"
+    },
+    "prize": {
+      "value": "1st Place, 2nd Place, 3rd Place, plus 5 Juror's Choice Awards. USD 1,500 will be awarded in cash and/or prizes.",
+      "source": "https://img1.wsimg.com/blobby/go/6ff9335c-dca3-4181-bf78-be29b2a2b0b6/Mooresville%20Arts%2014th%20Annual%20Winter%20Juried%20Exh.pdf"
+    },
+    "deadline": {
+      "value": "2027-01-08 at 5:00 p.m.",
+      "source": "https://mooresvillearts.org/winter-juried-show"
+    },
+    "past_show_evidence": {
+      "value": "Awards page for the 13th Annual Winter Juried Exhibit",
+      "source": "https://mooresvillearts-2026winterjuriedexhibit.artcall.org/pages/awards"
+    }
+  },
+  {
+    "title": {
+      "value": "97th Juried Artists Exhibition",
+      "source": "https://97.artcall.org/"
+    },
+    "organizer": {
+      "value": "San Antonio Art League + Museum (SAAL+M)",
+      "source": "https://97.artcall.org/"
+    },
+    "venue": {
+      "value": "San Antonio Art League + Museum, 130 King William Street, San Antonio, TX 78204",
+      "source": "https://www.saalm.org/events/97th-annual-juried-exhibition-call-for-entries"
+    },
+    "entry_fee": {
+      "value": "Non-members: USD 50 for up to 3 artworks, paid at submission through ArtCall. SAAL+M members: USD 35 for up to 3 artworks, paid at submission through ArtCall.",
+      "source": "https://97.artcall.org/"
+    },
+    "jurors": {
+      "value": "Dr. JoAnna Reyes",
+      "source": "https://97.artcall.org/"
+    },
+    "prize": {
+      "value": "Prizes and awards total over USD 10,000, including named awards in a variety of media. The USD 3,000 Onderdonk Purchase Prize is for Best of Show and adds the selected work to the museum's Permanent Collection.",
+      "source": "https://www.saalm.org/events/97th-annual-juried-exhibition-call-for-entries"
+    },
+    "deadline": {
+      "value": "2027-02-01 (online submission period 2026-11-16 to 2027-02-01)",
+      "source": "https://97.artcall.org/"
+    },
+    "past_show_evidence": {
+      "value": "ArtCall page for the 96th Juried Exhibition",
+      "source": "https://96juried.artcall.org/"
+    }
+  },
+  {
+    "title": {
+      "value": "Open Call / ZONE 6",
+      "source": "https://www.thezonezine.com/issue/opencall/"
+    },
+    "organizer": {
+      "value": "ZONE",
+      "source": "https://www.thezonezine.com/issue/opencall/"
+    },
+    "venue": {
+      "value": "online only (selected artists are published in ZONE's sixth collective printed book; no physical exhibition is stated on the call page)",
+      "source": "https://www.thezonezine.com/issue/opencall/"
+    },
+    "entry_fee": {
+      "value": "EUR 10 for up to 10 images, or skip the EUR 10 fee by pre-ordering the book at an early-bird price (the page also lists a price range of EUR 10 through EUR 30). Either path is a submission for consideration only and is non-refundable. Selected artists may buy copies at 50% off.",
+      "source": "https://www.thezonezine.com/issue/opencall/"
+    },
+    "jurors": {
+      "value": "not found",
+      "source": "https://www.thezonezine.com/issue/opencall/"
+    },
+    "prize": {
+      "value": "Publication in ZONE's sixth collective book with offset printing (no cash prize stated)",
+      "source": "https://www.thezonezine.com/issue/opencall/"
+    },
+    "deadline": {
+      "value": "2026-11-30",
+      "source": "https://www.thezonezine.com/issue/opencall/"
+    },
+    "past_show_evidence": {
+      "value": "ZONE 5 (Z5NE) collective book page",
+      "source": "https://www.thezonezine.com/issue/zone5/"
+    }
+  },
+  {
+    "title": {
+      "value": "January 2027 Juried Show",
+      "source": "https://d3zr9vspdnjxi.cloudfront.net/sites/edda2479/sup/11108760-January-2027-Juried-Show-Call-for-Art.pdf"
+    },
+    "organizer": {
+      "value": "The Oxbow Gallery",
+      "source": "https://d3zr9vspdnjxi.cloudfront.net/sites/edda2479/sup/11108760-January-2027-Juried-Show-Call-for-Art.pdf"
+    },
+    "venue": {
+      "value": "The Oxbow Gallery, 40 Cottage Street, Easthampton, MA 01027",
+      "source": "https://d3zr9vspdnjxi.cloudfront.net/sites/edda2479/sup/11108760-January-2027-Juried-Show-Call-for-Art.pdf"
+    },
+    "entry_fee": {
+      "value": "USD 20 for 1 submission; USD 30 for 2 submissions; USD 40 for 3 submissions, payable by check to The Oxbow Gallery. The gallery receives 20% of any work sold during the January show.",
+      "source": "https://d3zr9vspdnjxi.cloudfront.net/sites/edda2479/sup/11108760-January-2027-Juried-Show-Call-for-Art.pdf"
+    },
+    "jurors": {
+      "value": "internal jury panel (individual names not stated)",
+      "source": "https://d3zr9vspdnjxi.cloudfront.net/sites/edda2479/sup/11108760-January-2027-Juried-Show-Call-for-Art.pdf"
+    },
+    "prize": {
+      "value": "not found",
+      "source": "https://d3zr9vspdnjxi.cloudfront.net/sites/edda2479/sup/11108760-January-2027-Juried-Show-Call-for-Art.pdf"
+    },
+    "deadline": {
+      "value": "2026-12-20",
+      "source": "https://d3zr9vspdnjxi.cloudfront.net/sites/edda2479/sup/11108760-January-2027-Juried-Show-Call-for-Art.pdf"
     },
     "past_show_evidence": {
       "value": "not found",
-      "source": "https://example.com/harbor"
+      "source": "https://www.oxbowartgallery.com/exhibitions-"
+    }
+  },
+  {
+    "title": {
+      "value": "BANNED (Guild of Book Workers traveling juried exhibition)",
+      "source": "https://gbwexhibits.org/call/banned"
+    },
+    "organizer": {
+      "value": "Guild of Book Workers",
+      "source": "https://gbwexhibits.org/call/banned"
+    },
+    "venue": {
+      "value": "Traveling exhibition at venues across the United States, to be announced; selected work tours for approximately eighteen months",
+      "source": "https://gbwexhibits.org/call/banned"
+    },
+    "entry_fee": {
+      "value": "Guild members: USD 70 for the first entry and USD 30 for a second entry. The fee is due when work is submitted (submissions open 2027-02-01), not during the optional intent period. The fee covers handling, insurance while the work is in the Guild's care, the exhibition catalog, and return shipping. Fees are non-refundable. Open to Guild members in good standing.",
+      "source": "https://gbwexhibits.org/call/banned"
+    },
+    "jurors": {
+      "value": "Three jurors, names to be announced at a later date",
+      "source": "https://gbwexhibits.org/call/banned"
+    },
+    "prize": {
+      "value": "Selected work tours for about eighteen months and is published in a full-color catalog sent to every Guild member (no cash prize stated)",
+      "source": "https://gbwexhibits.org/call/banned"
+    },
+    "deadline": {
+      "value": "2027-06-30 (work must arrive by this date; optional intent to submit closes 2027-01-31; submissions open 2027-02-01)",
+      "source": "https://gbwexhibits.org/call/banned"
+    },
+    "past_show_evidence": {
+      "value": "Night Circus, a prior Guild of Book Workers traveling exhibition page",
+      "source": "https://guildofbookworkers.org/current-exhibit-night"
+    }
+  },
+  {
+    "title": {
+      "value": "100 Artists of the World 2027",
+      "source": "https://culturalelab.com/public/books/100-artists-of-the-world/"
+    },
+    "organizer": {
+      "value": "Culturale Lab",
+      "source": "https://culturalelab.com/public/books/100-artists-of-the-world/"
+    },
+    "venue": {
+      "value": "online only (printed softcover book, 21 x 28 cm, scheduled for April/May 2027; no physical exhibition is stated on the call page)",
+      "source": "https://culturalelab.com/public/books/100-artists-of-the-world/"
+    },
+    "entry_fee": {
+      "value": "Application is free. If selected, a USD 297 participation fee secures a two-page place in the book. The digital edition is included in that fee; a printed copy is not included and is described as available separately at approximately USD 70 plus shipping.",
+      "source": "https://culturalelab.com/public/books/100-artists-of-the-world/"
+    },
+    "jurors": {
+      "value": "not found",
+      "source": "https://culturalelab.com/public/books/100-artists-of-the-world/"
+    },
+    "prize": {
+      "value": "If selected and the participation fee is paid: two pages in the book (one for the submitted work with a critique, one for the artist profile). No cash prize stated.",
+      "source": "https://culturalelab.com/public/books/100-artists-of-the-world/"
+    },
+    "deadline": {
+      "value": "No fixed date; applications are reviewed on a rolling basis and close when 100 places are filled",
+      "source": "https://culturalelab.com/public/books/100-artists-of-the-world/"
+    },
+    "past_show_evidence": {
+      "value": "Culturale Lab page listing previously published art books",
+      "source": "https://culturalelab.com/our-published-books/"
+    }
+  },
+  {
+    "title": {
+      "value": "Arizona Sunsets (outdoor sculpture exhibition)",
+      "source": "https://shemerartcenter.org/wp-content/uploads/2026/11/AZ-Sunsets-Prospectus.pdf"
+    },
+    "organizer": {
+      "value": "Shemer Art Center",
+      "source": "https://shemerartcenter.org/wp-content/uploads/2026/11/AZ-Sunsets-Prospectus.pdf"
+    },
+    "venue": {
+      "value": "Shemer Art Center, 5005 E. Camelback Road, Phoenix, AZ 85018",
+      "source": "https://shemerartcenter.org/wp-content/uploads/2026/11/AZ-Sunsets-Prospectus.pdf"
+    },
+    "entry_fee": {
+      "value": "Shemer members: USD 40 for one entry, USD 45 for two, USD 50 for three. Non-members: USD 50 for one entry, USD 55 for two, USD 60 for three. Fees are non-refundable. Payable online or by check. All entries must be available for purchase, with 30% of proceeds benefiting the Shemer Art Center.",
+      "source": "https://shemerartcenter.org/wp-content/uploads/2026/11/AZ-Sunsets-Prospectus.pdf"
+    },
+    "jurors": {
+      "value": "Gerri Beadle-Murray, along with unnamed colleagues of Al Beadle",
+      "source": "https://shemerartcenter.org/wp-content/uploads/2026/11/AZ-Sunsets-Prospectus.pdf"
+    },
+    "prize": {
+      "value": "not found",
+      "source": "https://shemerartcenter.org/wp-content/uploads/2026/11/AZ-Sunsets-Prospectus.pdf"
+    },
+    "deadline": {
+      "value": "2027-01-29 at 5:00 p.m.",
+      "source": "https://shemerartcenter.org/wp-content/uploads/2026/11/AZ-Sunsets-Prospectus.pdf"
+    },
+    "past_show_evidence": {
+      "value": "Shemer exhibitions page, including outdoor Sculpture Garden exhibitions Digital Stone and Color in Play",
+      "source": "https://shemerartcenter.org/happenings/exhibitions-main/"
+    }
+  },
+  {
+    "title": {
+      "value": "39th Annual Culture & Agriculture Exhibition",
+      "source": "https://img1.wsimg.com/blobby/go/4b2318ef-935e-4b6e-a45e-e7ae26149768/2027%20Gallery%20Q_Culture_Agriculture%20Prospectus_.pdf"
+    },
+    "organizer": {
+      "value": "Gallery Q",
+      "source": "https://img1.wsimg.com/blobby/go/4b2318ef-935e-4b6e-a45e-e7ae26149768/2027%20Gallery%20Q_Culture_Agriculture%20Prospectus_.pdf"
+    },
+    "venue": {
+      "value": "Gallery Q, 1108 Main Street, Stevens Point, WI 54481",
+      "source": "https://img1.wsimg.com/blobby/go/4b2318ef-935e-4b6e-a45e-e7ae26149768/2027%20Gallery%20Q_Culture_Agriculture%20Prospectus_.pdf"
+    },
+    "entry_fee": {
+      "value": "USD 30 entry fee. Gallery Q will also create a digital catalog featuring the exhibition and participating artists.",
+      "source": "https://img1.wsimg.com/blobby/go/4b2318ef-935e-4b6e-a45e-e7ae26149768/2027%20Gallery%20Q_Culture_Agriculture%20Prospectus_.pdf"
+    },
+    "jurors": {
+      "value": "Roberta Condon",
+      "source": "https://img1.wsimg.com/blobby/go/4b2318ef-935e-4b6e-a45e-e7ae26149768/2027%20Gallery%20Q_Culture_Agriculture%20Prospectus_.pdf"
+    },
+    "prize": {
+      "value": "USD 2,850 in awards: Best of Show USD 1,000; People's Choice USD 500; 1st Place USD 450; 2nd Place USD 350; 3rd Place USD 250; three Honorable Mentions USD 100 each",
+      "source": "https://img1.wsimg.com/blobby/go/4b2318ef-935e-4b6e-a45e-e7ae26149768/2027%20Gallery%20Q_Culture_Agriculture%20Prospectus_.pdf"
+    },
+    "deadline": {
+      "value": "2027-01-31 at midnight Central Time",
+      "source": "https://img1.wsimg.com/blobby/go/4b2318ef-935e-4b6e-a45e-e7ae26149768/2027%20Gallery%20Q_Culture_Agriculture%20Prospectus_.pdf"
+    },
+    "past_show_evidence": {
+      "value": "2026 Culture & Agriculture exhibition catalog page, with a print-on-demand catalog offer covering all 56 juror-selected works",
+      "source": "https://culture-agriculture.com/exhibition-catalog"
+    }
+  },
+  {
+    "title": {
+      "value": "64th Annual Juried Competition",
+      "source": "https://www.masurmuseum.org/product/64th-annual-juried-competition/"
+    },
+    "organizer": {
+      "value": "Masur Museum of Art, sponsored by The Northeast Louisiana Arts Council",
+      "source": "https://www.masurmuseum.org/product/64th-annual-juried-competition/"
+    },
+    "venue": {
+      "value": "Masur Museum Main House, 1400 S Grand St, Monroe, LA 71202",
+      "source": "https://www.masurmuseum.org/product/64th-annual-juried-competition/"
+    },
+    "entry_fee": {
+      "value": "USD 10.00 per entered artwork, with a minimum of two entries and a maximum of five (USD 20.00 for two artworks; USD 50.00 for five artworks). Fees are non-refundable.",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18140/CAFE"
+    },
+    "jurors": {
+      "value": "Moment Solomon",
+      "source": "https://www.masurmuseum.org/product/64th-annual-juried-competition/"
+    },
+    "prize": {
+      "value": "Best in Show USD 1,000.00; total awards USD 3,200.00, awarded by the juror. A separate USD 100.00 Best Packed award is decided by museum staff.",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18140/CAFE"
+    },
+    "deadline": {
+      "value": "2026-12-16 at 11:59 p.m.",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18140/CAFE"
+    },
+    "past_show_evidence": {
+      "value": "63rd Annual Juried Competition exhibition page",
+      "source": "https://www.masurmuseum.org/product/63rd-annual-juried-competition/"
+    }
+  },
+  {
+    "title": {
+      "value": "Expressions West 2027",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18374/CAFE"
+    },
+    "organizer": {
+      "value": "Coos Art Museum",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18374/CAFE"
+    },
+    "venue": {
+      "value": "Coos Art Museum, 235 Anderson Ave, Coos Bay, OR 97420",
+      "source": "https://coosartmuseum.org/visit/"
+    },
+    "entry_fee": {
+      "value": "Non-refundable fee of USD 35 for the first submission, USD 10 for the second, and USD 10 for the third; up to three submissions per artist",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18374/CAFE"
+    },
+    "jurors": {
+      "value": "Daemian Hawthorn",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18374/CAFE"
+    },
+    "prize": {
+      "value": "First Place USD 1,000; Second Place USD 750.00; Third Place USD 250.00",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18374/CAFE"
+    },
+    "deadline": {
+      "value": "2026-12-09",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18374/CAFE"
+    },
+    "past_show_evidence": {
+      "value": "Artist page documenting acceptance into Expressions West at Coos Art Museum, August 15 to October 12, 2025",
+      "source": "https://www.gesinekratzner.com/blob-blog/2025/7/10/expression-west"
+    }
+  },
+  {
+    "title": {
+      "value": "THROWING SHADE",
+      "source": "https://art-fluent.com/calls-for-art/throwing-shade-prospectus/"
+    },
+    "organizer": {
+      "value": "Art Fluent",
+      "source": "https://art-fluent.com/calls-for-art/throwing-shade-prospectus/"
+    },
+    "venue": {
+      "value": "online only (online gallery at www.art-fluent.com)",
+      "source": "https://art-fluent.com/calls-for-art/throwing-shade-prospectus/"
+    },
+    "entry_fee": {
+      "value": "USD 25 for the first entry; USD 10 for each additional entry, up to 20 total. Payment is non-refundable and does not guarantee acceptance.",
+      "source": "https://art-fluent.com/calls-for-art/throwing-shade-prospectus/"
+    },
+    "jurors": {
+      "value": "Amy Matteson Neill, Creative Director, along with an anonymous committee of jurors",
+      "source": "https://art-fluent.com/calls-for-art/throwing-shade-prospectus/"
+    },
+    "prize": {
+      "value": "Best of Show USD 750; two Director's Choice awards USD 250 each. All accepted pieces are displayed in the online gallery.",
+      "source": "https://art-fluent.com/calls-for-art/throwing-shade-prospectus/"
+    },
+    "deadline": {
+      "value": "2027-01-08 at midnight MST",
+      "source": "https://art-fluent.com/calls-for-art/throwing-shade-prospectus/"
+    },
+    "past_show_evidence": {
+      "value": "Art Fluent online gallery for the prior exhibit HUMANITY",
+      "source": "https://art-fluent.com/gallery/humanity/"
+    }
+  },
+  {
+    "title": {
+      "value": "16th Annual Metro Open Juried Exhibition: Your Community",
+      "source": "https://www.caphillartleague.org/open-call-juried-exhibition-your-community/"
+    },
+    "organizer": {
+      "value": "Capitol Hill Art League (a program of the Capitol Hill Arts Workshop)",
+      "source": "https://www.caphillartleague.org/open-call-juried-exhibition-your-community/"
+    },
+    "venue": {
+      "value": "Capitol Hill Arts Workshop, 545 7th Street, SE, Washington, DC 20003",
+      "source": "https://www.caphillartleague.org/open-call-juried-exhibition-your-community/"
+    },
+    "entry_fee": {
+      "value": "USD 35 for up to 3 entries. 2026 CHAL members who have fulfilled volunteer requirements receive a discount code reducing the fee to USD 25 for 3 entries.",
+      "source": "https://www.caphillartleague.org/open-call-juried-exhibition-your-community/"
+    },
+    "jurors": {
+      "value": "Roya Chadab",
+      "source": "https://www.caphillartleague.org/open-call-juried-exhibition-your-community/"
+    },
+    "prize": {
+      "value": "USD 500 for First, USD 400 for Second, USD 300 for Third, and one Honorable Mention at USD 200, awarded by the juror",
+      "source": "https://www.caphillartleague.org/open-call-juried-exhibition-your-community/"
+    },
+    "deadline": {
+      "value": "2026-12-26 (submissions opened 2026-11-21)",
+      "source": "https://www.caphillartleague.org/open-call-juried-exhibition-your-community/"
+    },
+    "past_show_evidence": {
+      "value": "Capitol Hill Art League past exhibitions page",
+      "source": "https://www.caphillartleague.org/past-exhibitions/"
+    }
+  },
+  {
+    "title": {
+      "value": "2027 Artworks Northwest Biennial",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18259/CAFE"
+    },
+    "organizer": {
+      "value": "Umpqua Valley Arts Association (UVA)",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18259/CAFE"
+    },
+    "venue": {
+      "value": "Umpqua Valley Arts, 1624 West Harvard Avenue, Roseburg, OR 97471",
+      "source": "https://uvarts.com/contact/"
+    },
+    "entry_fee": {
+      "value": "USD 35 entry fee (the listing does not state whether this covers one work or up to three). UVA members receive 10% off submission fees.",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18259/CAFE"
+    },
+    "jurors": {
+      "value": "Brenda Mallory",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18259/CAFE"
+    },
+    "prize": {
+      "value": "1st Place USD 500; 2nd Place USD 250; 3rd Place USD 150; J. Lynn Peterson Award USD 100",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18259/CAFE"
+    },
+    "deadline": {
+      "value": "2027-03-26 at 11:59 p.m. Mountain Time (10:59 p.m. Pacific Time)",
+      "source": "https://opportunities.wearecreativewest.org/opportunity/18259/CAFE"
+    },
+    "past_show_evidence": {
+      "value": "Umpqua Valley Arts past exhibits page",
+      "source": "https://uvarts.com/past-exhibits/"
+    }
+  },
+  {
+    "title": {
+      "value": "28th International Open",
+      "source": "https://womanmade.org/call-for-art/"
+    },
+    "organizer": {
+      "value": "Woman Made Gallery",
+      "source": "https://womanmade.org/call-for-art/"
+    },
+    "venue": {
+      "value": "Woman Made Gallery, 1332 S. Halsted St., Chicago, IL 60607",
+      "source": "https://womanmade.org/call-for-art/"
+    },
+    "entry_fee": {
+      "value": "USD 30 (this call's listed fee). The gallery's general juried-exhibition page states a USD 35 fee unless a call indicates otherwise. Enhanced Artist Level members and above receive one free entry annually. Fee waivers are offered on request.",
+      "source": "https://womanmade.org/call-for-art/"
+    },
+    "jurors": {
+      "value": "Nnenna Okore",
+      "source": "https://womanmade.org/call-for-art/"
+    },
+    "prize": {
+      "value": "Awards selected by the juror: 1st prize USD 500; 2nd prize USD 250; 3rd prize USD 100; Honorable Mention (amount not stated)",
+      "source": "https://app.entrythingy.com/womanmade/28th-international-open/"
+    },
+    "deadline": {
+      "value": "2026-12-28",
+      "source": "https://womanmade.org/call-for-art/"
+    },
+    "past_show_evidence": {
+      "value": "27th International Open artist reception event page",
+      "source": "https://womanmade.org/event/27th-international-open-2/"
+    }
+  },
+  {
+    "title": {
+      "value": "Open Field (Large Scale Abstract Art Exhibit)",
+      "source": "https://milfordarts.org/event/open-field-artist-call/"
+    },
+    "organizer": {
+      "value": "Milford Arts Council",
+      "source": "https://milfordarts.org/event/open-field-artist-call/"
+    },
+    "venue": {
+      "value": "MAC Downtown Gallery, 40 Railroad Ave South, Milford, CT",
+      "source": "https://milfordarts.org/event/open-field-artist-call/"
+    },
+    "entry_fee": {
+      "value": "USD 20 for the first work; USD 10 for each additional work; up to 3 works. Entry fees are non-refundable. Only submissions with a paid entry fee received by the deadline are considered.",
+      "source": "https://milfordarts.org/event/open-field-artist-call/"
+    },
+    "jurors": {
+      "value": "To be announced",
+      "source": "https://milfordarts.org/event/open-field-artist-call/"
+    },
+    "prize": {
+      "value": "First Place USD 250; Second Place USD 150; Third Place USD 100",
+      "source": "https://milfordarts.org/event/open-field-artist-call/"
+    },
+    "deadline": {
+      "value": "2026-12-20 at midnight",
+      "source": "https://milfordarts.org/event/open-field-artist-call/"
+    },
+    "past_show_evidence": {
+      "value": "not found (the call states this is the organizer's first exhibition dedicated entirely to abstract work; no prior Open Field page was found)",
+      "source": "https://milfordarts.org/event/open-field-artist-call/"
     }
   }
 ]

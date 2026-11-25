@@ -78,11 +78,14 @@ ok(html.every(f => /Winter Light/.test(read(f)) && /href="\.\.\/"/.test(read(f))
 ok(!textFiles.some(f => /[—–]/.test(read(f))), "no em or en dashes in Call Check files");
 ok(!html.some(f => /\b(delve|crucial|pivotal|showcase|testament|vibrant|foster|landscape|leverage|utilize|seamless|robust|empower)\b/i.test(read(f).replace(/<[^>]+>/g, " "))), "no banned AI vocabulary");
 
-const data = S.parseJsonText(read(join(cc, "data/calls.json")));
-ok(data.ok && data.records.length >= 1 && data.records.every(r => r.example), "placeholder JSON is example rows only");
-ok(data.records.every(r => /EXAMPLE/.test(r.fields.title.value)), "placeholder titles are marked EXAMPLE");
-const scout = S.parseJsonText(readFileSync("/workspace/scout/callcheck-20.json", "utf8"));
-ok(scout.ok && scout.records.length === 20 && scout.skipped === 0, "Scout callcheck-20.json loads unchanged, 20 of 20");
+const scoutBytes = readFileSync("/workspace/scout/callcheck-20.json");
+const liveBytes = readFileSync(join(cc, "data/calls.json"));
+ok(Buffer.compare(scoutBytes, liveBytes) === 0, "live data/calls.json is byte-identical to /workspace/scout/callcheck-20.json");
+const data = S.parseJsonText(liveBytes.toString("utf8"));
+ok(data.ok && data.records.length === 20 && data.skipped === 0 && data.records.every(r => !r.example), "live table data is 20 sourced rows, no example flags");
+ok(data.records[0].fields.title.value === "47th Annual Open Juried Show", "first live row is the Ridgewood call");
+const fixture = S.parseJsonText(read(join(cc, "test/fixtures/placeholder.json")));
+ok(fixture.ok && fixture.records.length === 2 && fixture.records.every(r => r.example), "placeholder fixture still parses as two example rows");
 
 console.log(fails.length ? `\n${fails.length} FAILED` : "\nall checks passed");
 process.exit(fails.length ? 1 : 0);
