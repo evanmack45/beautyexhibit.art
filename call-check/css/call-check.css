@@ -1,0 +1,114 @@
+/* Call Check only. The Winter Light stylesheet is left untouched. */
+
+.cc-title {
+  margin: 2.4rem 0 0.85rem;
+  font-weight: 400;
+  font-size: clamp(2rem, 6vw, 3.25rem);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.cc-lede {
+  margin: 0 0 1.4rem;
+  max-width: 42rem;
+  font-size: 1.15rem;
+}
+
+.cc-note {
+  margin: 0 0 1.4rem;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid var(--gold);
+  background: var(--bg-raised);
+  max-width: 46rem;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+
+.cc-status {
+  min-height: 1.4em;
+  margin: 0 0 1rem;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--ink-dim);
+}
+
+.cc-status.is-error { color: #e8b4a0; }
+
+.cc-actions { margin: 0 0 1.6rem; }
+
+.cc-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin: 0 0 1.8rem;
+}
+
+.cc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.cc-table th,
+.cc-table td {
+  vertical-align: top;
+  text-align: left;
+  padding: 0.75rem 0.85rem 0.75rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.cc-table th {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  white-space: nowrap;
+}
+
+.cc-table td { min-width: 8.5rem; }
+.cc-table td:first-child { min-width: 11rem; font-weight: 500; }
+
+.cc-value { display: block; }
+.cc-not-found {
+  color: var(--ink-dim);
+  font-style: italic;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+}
+
+.cc-source {
+  display: block;
+  margin-top: 0.3rem;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+}
+
+.cc-badge {
+  display: inline-block;
+  margin-left: 0.45rem;
+  padding: 0.08rem 0.4rem;
+  border: 1px solid var(--gold-deep);
+  color: var(--gold);
+  font-family: var(--sans);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.cc-empty {
+  margin: 1.2rem 0;
+  color: var(--ink-dim);
+}
+
+.site-nav { flex-wrap: wrap; }
+
+@media (max-width: 640px) {
+  .site-header .wrap { flex-direction: column; align-items: flex-start; }
+  .cc-table td { min-width: 7.5rem; }
+}

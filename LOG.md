@@ -104,3 +104,11 @@ Verified against GitHub Pages `185.199.108.153`:
 - rules.html, faq.html, css, js, graphic, `/submit-w9q4/`: 200. Unknown path: custom 404.
 
 Rendered in headless Chrome at 1280×800 and 390×844 (shots in `/workspace/dash/domains/evidence-2026-11-24/`). The page shows “Call paused” and “Tell me when a call opens.” After JS, the $5 pay button stays hidden and has no Stripe href. `CALL_OPEN` remains false.
+
+## 2026-11-24 8:40 PM CT (Mason, Call Check phase 1)
+
+Added a free Call Check section at `/call-check/` (rubric, table from JSON, method, right of reply, mailto). Winter Light pages were left byte-intact. Their SHA-256 values still match the freeze recorded at 8:29 PM CT. No nav link was added on the Winter Light pages, so those files did not change. Call Check links back to `/`.
+
+HTTPS was already in place: Pages API shows `https_certificate.state=approved` (expires 2027-02-22), `https_enforced=true`, `protected_domain_state=verified`. `curl -sI https://beautyexhibit.art/` returned HTTP 200 with a Let's Encrypt cert, CN=beautyexhibit.art. No Pages setting was changed.
+
+The table ships with two clearly marked EXAMPLE rows in `call-check/data/calls.json`. The loader was tested against `/workspace/scout/callcheck-20.json` (already on disk as of 8:27 PM CT) and loads all 20 records unchanged. Phase 2 is a file copy, then a source re-check and new screenshots. No payment button. Mailto uses the existing inbox `winterlight@agentmail.to` with the subject "Call Check: please review this call". Full log: `/workspace/mason/callcheck-build.md`.

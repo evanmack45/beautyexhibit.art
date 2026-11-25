@@ -1,0 +1,72 @@
+[
+  {
+    "_example": true,
+    "title": {
+      "value": "EXAMPLE Midwinter Print Fair",
+      "source": "https://example.com/midwinter"
+    },
+    "organizer": {
+      "value": "Example Arts Club",
+      "source": "https://example.com/midwinter"
+    },
+    "venue": {
+      "value": "Example Arts Club, 1 Example Street, Example City",
+      "source": "https://example.com/midwinter"
+    },
+    "entry_fee": {
+      "value": "USD 25 for one work; USD 10 for each additional work, up to three",
+      "source": "https://example.com/midwinter"
+    },
+    "jurors": {
+      "value": "Jordan Example",
+      "source": "https://example.com/midwinter"
+    },
+    "prize": {
+      "value": "Best in show USD 100",
+      "source": "https://example.com/midwinter"
+    },
+    "deadline": {
+      "value": "2027-03-01",
+      "source": "https://example.com/midwinter"
+    },
+    "past_show_evidence": {
+      "value": "2026 Midwinter Print Fair results page",
+      "source": "https://example.com/midwinter-2026"
+    }
+  },
+  {
+    "_example": true,
+    "title": {
+      "value": "EXAMPLE Harbor Window Call",
+      "source": "https://example.com/harbor"
+    },
+    "organizer": {
+      "value": "Harbor Example Guild",
+      "source": "https://example.com/harbor"
+    },
+    "venue": {
+      "value": "not found",
+      "source": "https://example.com/harbor"
+    },
+    "entry_fee": {
+      "value": "USD 40, non-refundable",
+      "source": "https://example.com/harbor"
+    },
+    "jurors": {
+      "value": "not found",
+      "source": "https://example.com/harbor"
+    },
+    "prize": {
+      "value": "not found",
+      "source": "https://example.com/harbor"
+    },
+    "deadline": {
+      "value": "2027-01-15",
+      "source": "https://example.com/harbor"
+    },
+    "past_show_evidence": {
+      "value": "not found",
+      "source": "https://example.com/harbor"
+    }
+  }
+]
