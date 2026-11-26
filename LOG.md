@@ -202,3 +202,11 @@ First screen is now art, "Winter Light", "A juried online exhibition. The call i
 Freeze hashes updated in `call-check/scripts/check-site.mjs` for index, rules, faq, submit, 404 and `css/site.css` (final css hash `4398c2e7f25c6a9b38c85d7fe864e99fe6f91d9a7c2971c7f485e871b99b8521`). `node call-check/scripts/check-site.mjs` passed. Call Check e2e on live (`e2e-table.mjs`, real 20 rows, first row Ridgewood) passed.
 
 Commits: 082e8db (art and kickers), ee4b0e4 (12 px text, tap targets), 3f8de10 (nowrap header). Pages built 3f8de10, live css byte-identical. Gate at 390 and 1280: PASS, no P0. Output: `/workspace/ansel/slop-fix/gate-after`. No messages sent.
+
+## 2026-11-25, Ansel: four-section home and one-line nav (Dash, due Thu 11/26 noon CT)
+
+Cut the "The theme" section from the home page so it has four sections: hero, If a work is accepted, How work is chosen, and Eligibility. The medium rule ("any medium that can be shown as a still image") and the theme meaning ("winter light, not only winter as a season or a setting") already live on rules.html and faq.html, so no fact was dropped. Every date promise and the paused / pay / waitlist state is unchanged.
+
+Shortened the Winter Light nav label "Rules & rubric" to "Rules" on index, rules, FAQ, 404, and submit. Shortened the Call Check nav label "Right of reply" to "Reply" (the reply page heading stays "Right of reply"). Tightened header and nav gap, set nowrap on the header wrap and the nav, and slightly reduced nav size and wordmark tracking under 430px so the bar stays one line from 320 to 430 and at 1280. Checked locally at 320, 360, 390, 430, and 1280 on home and Call Check: one row of links, no page overflow.
+
+Freeze hashes updated for index, rules, faq, submit, 404, and css/site.css. `node call-check/scripts/check-site.mjs` passed. No messages sent.

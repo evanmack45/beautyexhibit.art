@@ -17,18 +17,18 @@ const fails = [];
 const ok = (c, m) => { console.log((c ? "PASS " : "FAIL ") + m); if (!c) fails.push(m); };
 
 const FROZEN = {
-  "index.html": "4de8487543d97fcb73c1c04e5e4469352041d17d9147ea62911336ad8c43e375",
-  "rules.html": "29e0a27e896f9f21d87b686a651ad96245c4e2cef8ab8c9b3675b96500bed453",
-  "faq.html": "1b2e9e8da1fbeb32c1444606fc2a8de130f91f9a8a6e7975d5356567f7d1491b",
-  "submit-w9q4/index.html": "fcce74bd180a66bee6cf5d56648be17fe91fdf88dba80b1691ab0c6b81cb944a",
+  "index.html": "43b317a4255283b60a731a449e320efd04e5a9d22672ad9dd13e48836cb784c6",
+  "rules.html": "d454df30a2d24d3dcd486447e86bfaa04380446a7851b5b2e19dbf3ea99cfa61",
+  "faq.html": "e68722e524aee3c307b886a8fd277af7319822ca266bcb5fe8b4b91dba98327c",
+  "submit-w9q4/index.html": "c621c5a8b183c472d1ab8925d52279e446f3bb39dcf114e187e3eaf0bc2ba108",
   "js/config.js": "6cb2084042775ad0e6e9cdce2c7d5a1f8f2eead874a97fa7556703d461ed4f37",
   "js/app.js": "6543e5bf7b7deb2c884b55b9400416aa9799aeb819f63bf5326d9d6b701eaf44",
-  "css/site.css": "4398c2e7f25c6a9b38c85d7fe864e99fe6f91d9a7c2971c7f485e871b99b8521",
+  "css/site.css": "c155a51ce7fb741cf7ee1b1b18eb1c0a65d21a41869788956233e1b5ba33f0b6",
   "img/winter-light.svg": "28e3372534a45a78211b0faadce485dc918e46e3cc26fb5a32ca42c374acea3a",
   "CNAME": "c1d520f856aea274b6a5151fb687f197f228f2a7be94d04ddaeab9849de111fb",
   "robots.txt": "daafec71c71549c10c065c0819acd54803c463fbb6966ff0e4cde1302a6207b6",
   "favicon.svg": "52babdab8b4fe3bc6723914c8e529648dab63eed26b2d91d74b4a29b4926203d",
-  "404.html": "04d9d632e4b5abff94795520b8b418bb1bda7a77db1648ea88810140796ec102"
+  "404.html": "e49c1f121420d35b07b757a1c7f2707ad4f1514d8c52483efe52f4804807bb91"
 };
 for (const [f, want] of Object.entries(FROZEN)) {
   const got = createHash("sha256").update(readFileSync(join(repo, f))).digest("hex");
