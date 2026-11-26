@@ -192,3 +192,13 @@ Screenshots of the live home page, viewed:
 - `/workspace/mason/beautyexhibit-payhidden-390.jpg`
 
 Both show the paused box and the waitlist button, and do not show "Enter for $5". No messages sent.
+
+## 2026-11-25, Ansel: slop fix (Dash item, audit of 11/25)
+
+Removed the "Open call · 2026" chip and every other `.kicker` label (rules, FAQ, submit, four Call Check pages, and the CSS rule). Put the hero painting (`/workspace/ansel/art/winter-light-hero.png`) on the first screen as `<picture>` (WebP + JPG, 800 and 1280 wide, width/height set). Square crop at 390 (358 px, 42% of the 844 fold), 3.4:1 at desktop. Caption: "AI-generated image made for this site. Not an exhibition entry or a real artist's work." Alt describes the room, chair, dresser, vase and light band.
+
+First screen is now art, "Winter Light", "A juried online exhibition. The call is paused.", and the paused box with the waitlist button. The $5 fee sentence left the lede and the box. It stays in the Entry row below the box, so no fact was dropped. The paused box markup, `data-` attributes, waitlist mailto and the hidden pay row are unchanged. `CALL_OPEN` is still false and the live HTML has no Stripe URL. Small text raised to 12 px and header/footer links given 24 px targets. `og.png` (said "An open call") replaced by `og.jpg`, a text-free crop of the painting. The four pages with og tags point at it. `winter-light.svg` stays in the repo, unused on the page, because its freeze hash is checked.
+
+Freeze hashes updated in `call-check/scripts/check-site.mjs` for index, rules, faq, submit, 404 and `css/site.css` (final css hash `4398c2e7f25c6a9b38c85d7fe864e99fe6f91d9a7c2971c7f485e871b99b8521`). `node call-check/scripts/check-site.mjs` passed. Call Check e2e on live (`e2e-table.mjs`, real 20 rows, first row Ridgewood) passed.
+
+Commits: 082e8db (art and kickers), ee4b0e4 (12 px text, tap targets), 3f8de10 (nowrap header). Pages built 3f8de10, live css byte-identical. Gate at 390 and 1280: PASS, no P0. Output: `/workspace/ansel/slop-fix/gate-after`. No messages sent.
