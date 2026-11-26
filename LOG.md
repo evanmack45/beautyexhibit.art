@@ -216,3 +216,5 @@ Live checks, 8:26 PM America/Chicago, 25 Nov 2026: Pages built 22dde7e. `https:/
 ## 2026-11-26, Ansel: Call Check og:image (Compass row 4)
 
 Added `og:image`, `twitter:card`, `twitter:title`, `twitter:description`, and `twitter:image` to `call-check/index.html`. `og:title`, `og:description`, and `og:url` were already present and were left as they were (they match the page title and description). The image is the existing painting crop at `https://beautyexhibit.art/img/og.jpg`. No other copy or price change. Call Check HTML is not in the Winter Light freeze list. `node call-check/scripts/check-site.mjs` passed. No messages sent.
+
+Live checks, 1:32 PM America/Chicago, 26 Nov 2026: Pages built 1214eeb. `https://beautyexhibit.art/call-check/` 200. `curl -s https://beautyexhibit.art/call-check/ | grep og:image` returns `<meta property="og:image" content="https://beautyexhibit.art/img/og.jpg">`. That image URL returns 200. No messages sent.
