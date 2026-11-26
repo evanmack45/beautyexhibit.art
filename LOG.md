@@ -218,3 +218,9 @@ Live checks, 8:26 PM America/Chicago, 25 Nov 2026: Pages built 22dde7e. `https:/
 Added `og:image`, `twitter:card`, `twitter:title`, `twitter:description`, and `twitter:image` to `call-check/index.html`. `og:title`, `og:description`, and `og:url` were already present and were left as they were (they match the page title and description). The image is the existing painting crop at `https://beautyexhibit.art/img/og.jpg`. No other copy or price change. Call Check HTML is not in the Winter Light freeze list. `node call-check/scripts/check-site.mjs` passed. No messages sent.
 
 Live checks, 1:32 PM America/Chicago, 26 Nov 2026: Pages built 1214eeb. `https://beautyexhibit.art/call-check/` 200. `curl -s https://beautyexhibit.art/call-check/ | grep og:image` returns `<meta property="og:image" content="https://beautyexhibit.art/img/og.jpg">`. That image URL returns 200. No messages sent.
+
+## 2026-11-26 (CT) Compass rows (Mason)
+- BE-1: PASS. Removed the stale robots.txt comment about there being no sitemap and DNS not being pointed. Live robots.txt has no stale comment. Winter Light freeze hash for robots.txt updated. `CALL_OPEN` stays false. Commit `c334b17`.
+- BE-2: PASS. Added sitemap.xml with the homepage and /call-check/, and a Sitemap line in robots.txt. Live HEAD of /sitemap.xml is 200; robots.txt names it. Same commit `c334b17`. No Winter Light or Call Check HTML was edited.
+- BE-3: SKIP (Dash with Evan, Search Console Domain property).
+- BE-4: SKIP (Ansel's lane; already live in `1214eeb`).
