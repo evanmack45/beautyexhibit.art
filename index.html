@@ -12,11 +12,11 @@
   <meta property="og:title" content="Winter Light — Beauty Exhibit">
   <meta property="og:description" content="A juried online exhibition. The Winter Light call is paused. We are not taking entries or payments right now.">
   <meta property="og:url" content="https://beautyexhibit.art/">
-  <meta property="og:image" content="https://beautyexhibit.art/img/og.png">
+  <meta property="og:image" content="https://beautyexhibit.art/img/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Winter Light — Beauty Exhibit">
   <meta name="twitter:description" content="A juried online exhibition. The Winter Light call is paused.">
-  <meta name="twitter:image" content="https://beautyexhibit.art/img/og.png">
+  <meta name="twitter:image" content="https://beautyexhibit.art/img/og.jpg">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
@@ -40,13 +40,21 @@
     <div class="wrap">
       <section class="hero" aria-labelledby="show-title">
         <figure class="hero-art">
-          <img src="img/winter-light.svg" width="1600" height="700" alt="An abstract field of dark color with a low band of pale light.">
-          <figcaption class="caption">A site graphic, not an exhibition entry.</figcaption>
+          <picture>
+            <source type="image/webp" srcset="img/winter-light-hero-800.webp 800w, img/winter-light-hero-1280.webp 1280w" sizes="(min-width: 1200px) 1152px, 100vw">
+            <img src="img/winter-light-hero-1280.jpg" srcset="img/winter-light-hero-800.jpg 800w, img/winter-light-hero-1280.jpg 1280w" sizes="(min-width: 1200px) 1152px, 100vw" width="1280" height="720" fetchpriority="high" alt="An oil painting of an empty room in winter. A tall window, a wooden chair beside a dresser with a vase of bare branches, and a band of pale gold light across the wall and the floorboards.">
+          </picture>
+          <figcaption class="caption">AI-generated image made for this site. Not an exhibition entry or a real artist&rsquo;s work.</figcaption>
         </figure>
 
-        <p class="kicker">Open call &middot; 2026</p>
         <h1 id="show-title">Winter Light</h1>
-        <p class="lede">A juried online exhibition. Entry is $5 for up to three works when a call is open.</p>
+        <p class="lede">A juried online exhibition. The call is paused.</p>
+
+        <div class="opening-box" data-call-closed-only>
+          <h2 class="opening-title">Call paused</h2>
+          <p>We&rsquo;re not taking entries or payments right now. Write to us and we&rsquo;ll tell you if one opens.</p>
+          <p><a class="btn" data-waitlist-mailto href="mailto:winterlight@agentmail.to?subject=Tell%20me%20when%20Beauty%20Exhibit%20opens%20a%20call">Tell me when a call opens</a></p>
+        </div>
 
         <dl class="facts">
           <div>
@@ -58,12 +66,6 @@
             <dd>$5, up to three works, when a call is open. No other fees.</dd>
           </div>
         </dl>
-
-        <div class="opening-box" data-call-closed-only>
-          <h2 class="opening-title">Call paused</h2>
-          <p>We&rsquo;re not taking entries or payments right now. When a call opens, entry will be $5 for up to three works. Write to us and we&rsquo;ll tell you if one opens.</p>
-          <p><a class="btn" data-waitlist-mailto href="mailto:winterlight@agentmail.to?subject=Tell%20me%20when%20Beauty%20Exhibit%20opens%20a%20call">Tell me when a call opens</a></p>
-        </div>
         <div class="cta-row" data-call-open-only hidden>
           <a class="btn" data-pay href="#enter">Enter for $5</a>
           <p class="cta-note">After you pay, you&rsquo;ll get instructions for sending your images by email.</p>

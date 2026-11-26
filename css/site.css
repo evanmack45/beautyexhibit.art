@@ -146,16 +146,6 @@ main {
   padding-top: 0;
 }
 
-.kicker {
-  margin: 0 0 0.85rem;
-  font-family: var(--sans);
-  font-size: 0.72rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--gold);
-}
-
 .hero h1 {
   margin: 0 0 0.85rem;
   font-weight: 400;
@@ -179,9 +169,9 @@ main {
 .hero-art svg {
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 4;
+  aspect-ratio: 3.4 / 1;
   object-fit: cover;
-  object-position: center 80%;
+  object-position: center 58%;
   background: #0a0908;
 }
 
@@ -486,8 +476,8 @@ main {
 @media (max-width: 719px) {
   .hero-art img,
   .hero-art svg {
-    aspect-ratio: 16 / 6.5;
-    object-position: center 78%;
+    aspect-ratio: 1 / 1;
+    object-position: 20% center;
   }
 }
 

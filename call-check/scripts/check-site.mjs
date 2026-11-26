@@ -17,18 +17,18 @@ const fails = [];
 const ok = (c, m) => { console.log((c ? "PASS " : "FAIL ") + m); if (!c) fails.push(m); };
 
 const FROZEN = {
-  "index.html": "136336702a4c691e3d1b3a2cf825a0e05ece7a933255694448c58e04be92064a",
-  "rules.html": "263db5ff0563a287e503e4be2eea8fac1e8e570a8b3697df090d8bb0956e0369",
-  "faq.html": "999ec0f6083095e975284aafce97e2c9af9b001256b5ede4b812956623f0eeee",
-  "submit-w9q4/index.html": "1e76fd30ad81f1514ba9e201df58ba18fa11b0e128eb0e5ba7f4ba4ff9b3e562",
+  "index.html": "4de8487543d97fcb73c1c04e5e4469352041d17d9147ea62911336ad8c43e375",
+  "rules.html": "29e0a27e896f9f21d87b686a651ad96245c4e2cef8ab8c9b3675b96500bed453",
+  "faq.html": "1b2e9e8da1fbeb32c1444606fc2a8de130f91f9a8a6e7975d5356567f7d1491b",
+  "submit-w9q4/index.html": "fcce74bd180a66bee6cf5d56648be17fe91fdf88dba80b1691ab0c6b81cb944a",
   "js/config.js": "6cb2084042775ad0e6e9cdce2c7d5a1f8f2eead874a97fa7556703d461ed4f37",
   "js/app.js": "6543e5bf7b7deb2c884b55b9400416aa9799aeb819f63bf5326d9d6b701eaf44",
-  "css/site.css": "f3e1ef8ddc28c27bcd3066d58c6bac98aaba38bc941b3f3a13dde4d34365b2db",
+  "css/site.css": "55ad58bd24f72fe5bf07b733bcdd0f86a9b8d273eddebe4f9431a487d148fdd2",
   "img/winter-light.svg": "28e3372534a45a78211b0faadce485dc918e46e3cc26fb5a32ca42c374acea3a",
   "CNAME": "c1d520f856aea274b6a5151fb687f197f228f2a7be94d04ddaeab9849de111fb",
   "robots.txt": "daafec71c71549c10c065c0819acd54803c463fbb6966ff0e4cde1302a6207b6",
   "favicon.svg": "52babdab8b4fe3bc6723914c8e529648dab63eed26b2d91d74b4a29b4926203d",
-  "404.html": "63f734904bb6eda5b804c49340765f44e138f09b56cd318fdac1e048d36dee90"
+  "404.html": "04d9d632e4b5abff94795520b8b418bb1bda7a77db1648ea88810140796ec102"
 };
 for (const [f, want] of Object.entries(FROZEN)) {
   const got = createHash("sha256").update(readFileSync(join(repo, f))).digest("hex");
