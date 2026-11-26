@@ -103,7 +103,7 @@ a:hover, a:focus-visible { color: var(--focus); }
 
 .wordmark {
   font-family: var(--sans);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -178,7 +178,7 @@ main {
 .caption {
   margin: 0.55rem 0 0;
   font-family: var(--sans);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   letter-spacing: 0.02em;
   color: var(--ink-dim);
 }
@@ -209,7 +209,7 @@ main {
 .fact-label {
   margin: 0;
   font-family: var(--sans);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -523,4 +523,12 @@ main {
 
 .opening-box p:last-child {
   margin-bottom: 0;
+}
+
+/* Header and footer tap targets, 24px minimum */
+.wordmark,
+.site-nav a,
+.site-footer a {
+  display: inline-block;
+  padding-block: 0.3rem;
 }
