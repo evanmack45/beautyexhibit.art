@@ -26,7 +26,7 @@ const FROZEN = {
   "css/site.css": "c155a51ce7fb741cf7ee1b1b18eb1c0a65d21a41869788956233e1b5ba33f0b6",
   "img/winter-light.svg": "28e3372534a45a78211b0faadce485dc918e46e3cc26fb5a32ca42c374acea3a",
   "CNAME": "c1d520f856aea274b6a5151fb687f197f228f2a7be94d04ddaeab9849de111fb",
-  "robots.txt": "daafec71c71549c10c065c0819acd54803c463fbb6966ff0e4cde1302a6207b6",
+  "robots.txt": "efe7526968badb40d4ca331484c77f50fe00a79a032d158eb20b2f73a0f619a3",
   "favicon.svg": "52babdab8b4fe3bc6723914c8e529648dab63eed26b2d91d74b4a29b4926203d",
   "404.html": "e49c1f121420d35b07b757a1c7f2707ad4f1514d8c52483efe52f4804807bb91"
 };
